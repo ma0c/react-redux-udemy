@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import SeasonDisplay from './SeasonsDisplay'
+import Spinner from './Spinner';
+import SeasonDisplay from './SeasonsDisplay';
 
 
 class App extends React.Component {
@@ -44,9 +44,7 @@ class App extends React.Component {
             )
         }
         return (
-            <div>
-                Loading
-            </div>
+            <Spinner message="Please accept location requests"/>
         )
         
     }
